@@ -6,8 +6,10 @@ $(document).ready(function(){
 		})
 		
 	$('#close').click(function(){
-		window.open('article.html', '_self');
-		return false;
+		event.preventDefault();
+		    history.back(1);
+	//	window.open('article.html', '_self');
+	//	return false;
 		})
 
 	$('#galinfo').mouseenter(
