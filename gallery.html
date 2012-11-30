@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <title>Traveller Articles Prototype</title>
-	<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+	<script src="js/jquery-1.8.3.min.js"></script>
 	<script type="text/javascript" src="//use.typekit.net/fir4hwk.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 	<script src="js/scripts.js"></script>
@@ -14,19 +14,52 @@
 
 <div id="wrapper">
     	<div id="topbar">
-			<p class="pgnum">gallery: img 1 of 34</p>
+			<div id="paging"><p class="pgnum">gallery: img 1 of 18 <span class="arrow_box"></span></p>
+			<ul class="pagingnav">
+				<li class="sectitle"><a href="article.html">Article</a></li>
+				<li class="sectitle">Location map</li>
+				<li class="sectitle">Staying nearby</li>
+				<li class="sectitle">Trip overview</li>
+				<li class="sectitle"><a href="gallery.html">Gallery</a></li>
+				<li class="artpage">img 1</li>
+				<li class="artpage">img 2</li>
+				<li class="artpage">img 3</li>
+				<li class="artpage">img 4</li>
+				<li class="artpage">img 5</li>
+				<li class="artpage">img 6</li>
+				<li class="artpage">img 7</li>
+				<li class="artpage">img 8</li>
+				<li class="artpage">img 9</li>
+				<li class="artpage">img 10</li>
+				<li class="artpage">img 11</li>
+				<li class="artpage">img 12</li>
+				<li class="artpage">img 13</li>
+				<li class="artpage">img 14</li>			
+			</ul>
+			</div>
 			<p class="pgtitle">CNT / Beach / The spice islands of Zanzibar</p>
 		</div>
         
         <div id="gallerycontent">
             <div id="galimg">
               <!--  <img src="http://placekitten.com/g/1299/866" /> -->
-              <img src="http://placekitten.com/g/1589/1059" />
+              <img src="http://placekitten.com/g/1589/1059" class="imgmain" />
+				<img src="img/map.png" class="imgmap" />
               <p class="caption">Market Street in Stone Town, the capital of Zanzibar's main island</p>
             </div>
-
             <div id="galcntrl">
-                
+               	<div class="cntrl">
+               	prev
+				</div>
+				<div id="cntrlmap">
+				map
+				</div>
+				<div class="cntrl">
+				zoom
+				</div>
+				<div class="cntrl">
+				next
+				</div>
             </div>
 
             <div id="galinfo">

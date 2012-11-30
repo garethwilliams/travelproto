@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <title>Traveller Articles Prototype</title>
-	<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+	<script src="js/jquery-1.8.3.min.js"></script>
 	<script type="text/javascript" src="//use.typekit.net/fir4hwk.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 	<script src="js/scripts.js"></script>
@@ -14,8 +14,24 @@
 	
 	<div id="wrapper">
 		<div id="topbar">
-			<p class="pgnum">article: pg 6 of 8</p>
-			<p class="pgtitle">CNT / Beach / The spice islands of Zanzibar</p>
+			<div id="paging"><p class="pgnum">article: pg 6 of 8 <span class="arrow_box"></span></p>
+			<ul class="pagingnav">
+				<li class="sectitle"><a href="gallery.html">Gallery</a></li>
+				<li class="sectitle">Location map</li>
+				<li class="sectitle">Staying nearby</li>
+				<li class="sectitle">Trip overview</li>
+				<li class="sectitle">Article</li>
+				<li class="artpage"><a href="article.html">pg 1 : The spice islands of Zanzibar</a></li>
+				<li class="artpage"><a href="article2.html">pg 2 : My first visit</a></li>
+				<li class="artpage"><a href="article3.html">pg 3 : Baraza Resort & Spa</a></li>
+				<li class="artpage"><a href="article4.html">pg 4 : Kilindi Zanzibar</a></li>
+				<li class="artpage"><a href="article5.html">pg 5 : The Residence Zanzibar</a></li>
+				<li class="artpage"><a href="article6.html">pg 6 : Matemwe Retreat</a></li>
+				<li class="artpage"><a href="article7.html">pg 7 : Essque Zalu Zanzibar</a></li>
+				<li class="artpage"><a href="article8.html">pg 8 : Discover Zanzibar</a></li>
+			</ul>
+			</div>
+			<p class="pgtitle">CNT / Beach / <a href="article.html">The spice islands of Zanzibar</a></p>
 		</div>
 		<div id="content">
 			<div id="copy">
@@ -45,7 +61,7 @@
 
 			
             <div id="next">
-                <p class="readnext"><a href="article7.html">Read Page 7 of 8 : Matemwe Retreat</a></p>
+                <p class="readnext"><a href="article7.html">Read Page 7 of 8 : Essque Zalu Zanzibar</a></p>
             </div>
     		    <div><p class="prev"><a href="article5.html">previous</a></p></div>
 			</div>

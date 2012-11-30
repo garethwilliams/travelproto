@@ -19,6 +19,24 @@ $(document).ready(function(){
 		})
 
 		
+		$('#paging').mouseenter(
+			function(){$('.pagingnav').addClass('pagingopen');	
+		//	function(){$(this).addClass("pagingopen");
+			})
+
+		$('#paging').mouseleave(
+			function(){$('.pagingnav').removeClass('pagingopen');	
+			})
+		
+		
+				$('#cntrlmap').mouseenter(function(){
+					$('.imgmain').addClass('imghide');
+					$('.imgmap').addClass('imgshow');
+					})
+
+				$('#cntrlmap').mouseleave(function(){
+					$('.imgmain').removeClass('imghide');
+					$('.imgmap').removeClass('imgshow');
+				})
+		
 })
-
-

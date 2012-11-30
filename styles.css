@@ -21,6 +21,13 @@ h1 {
 	margin:20px 60px 0px 16%;
 }
 
+h2 {
+	font-style:italic;
+	font-family: "minion-pro";
+	margin:20px 60px 0px 16%;
+	font-weight:normal;
+}
+
 #wrapper {
     width:100%;
     position:relative;
@@ -44,13 +51,13 @@ h1 {
 	color:#333333;
 	font-size:1.2em;
 	float:right;
-	padding:0px 15px 0px 0px;
+	padding:0px 35px 0px 0px;
 	position:relative;
 	margin:10px 0px 10px 0px;
 }
 
 .pgtitle {
-	text-align:right;
+	text-align:left;
 	color:#333333;
 	font-size:1.2em;
 	float:left;
@@ -58,6 +65,96 @@ h1 {
 	padding:0px 0px 0px 15px;
 	margin:10px 0px 10px 0px;
 }
+
+#paging {
+	position:fixed;
+	float:right;
+	padding:0px 0px 0px 10px;
+	z-index:1002;
+	right:0px;
+	-webkit-transition: all 0.7s ease;
+	-moz-transition: all 0.7s ease;
+	-o-transition: all 0.7s ease;
+	-ms-transition: all 0.7s ease;
+	transition: all 0.7s ease;
+}
+
+.pagingclosed {
+	display:none;
+}
+
+.pagingopen {
+	display:block !important;
+	background:#ededed;
+}
+
+.pagingnav {
+	list-style:none;
+	text-align:left;
+	padding:0px 10px 20px 8px;
+	font-size:1.1em;
+	color:#4f4f4f;
+	border-top:black 1px solid;
+	top:29px;
+	position:relative;
+	display:none;
+}
+
+.pagingnav a {
+	color:gray;
+}
+
+.pagingnav a:hover {
+	color:black;
+}
+
+
+#paging li {
+	margin:0px;
+}
+
+.sectitle {
+	color:#212121;
+	padding:6px 0px 0px 0px;
+}
+
+.sectitle a {
+	color:black;
+}
+
+.sectitle:hover {
+	color:black;
+}
+
+.artpage {
+	padding:3px 0px 0px 8px;
+}
+
+.arrow_box {
+	position: relative;
+	background: #757575;
+	float:right;
+	top:-17px;
+	right:-15px;
+}
+.arrow_box:after {
+	top: 100%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.arrow_box:after {
+	border-color: rgba(117, 117, 117, 0);
+	border-top-color: #757575;
+	border-width: 8px;
+	left: 50%;
+	margin-left: -8px;
+}
+
 
 #content {
     position:relative;
@@ -75,7 +172,7 @@ h1 {
 #copy p {
     margin:10px 60px 0px 16%;
     font-size:1.4em;
-    line-height:1.65em;
+    line-height:1.6em;
     margin-top: 1.4em;
     max-width:650px;
 }
@@ -122,6 +219,12 @@ h1 {
     left:0px;
     float:left;
     margin:4px;
+}
+
+.fullscreen:hover {
+	background:rgba(255,255,255,1);
+	cursor:hand;
+	cursor:pointer;
 }
 
 .icon-resize-full {
@@ -174,8 +277,9 @@ h1 {
 	float:right;
 	background:white;
 	right:-200px;
-	z-index:1000;
+	z-index:90;
 	top:60px;
+	min-height:280px;
 	-webkit-transition: all 1s ease;
 	-moz-transition: all 1s ease;
 	-o-transition: all 1s ease;
@@ -192,6 +296,55 @@ h1 {
 	right:0px;
 }
 
+#galcntrl {
+	position:fixed;
+	float:left;
+	width:4%;
+	color:white;
+	top:35%;
+	z-index:2000;
+}
+
+.imgmap {
+	display:none !important;
+}
+
+.imghide {
+	display:none !important;
+	border:red solid 4px;
+}
+
+.imgshow {
+	display:block !important;
+}
+
+.purple {
+	background-color:purple;
+}
+
+#cntrlmap {
+	margin:10px 10px 10px 10px;
+	border:white 1px solid;
+	padding:10px 10px 10px 10px;
+	text-align:center;
+	position:relative;
+	float:left;
+}
+
+#cntrlmap:hover {
+	cursor:hand;
+	cursor:pointer;
+}
+
+.cntrl {
+	margin:10px 10px 10px 10px;
+	border:white 1px solid;
+	padding:10px 10px 10px 10px;
+	text-align:center;
+	position:relative;
+	float:left;
+}
+
 #close {
     width:30px;
     height:30px;
@@ -201,6 +354,12 @@ h1 {
     left:0px;
     float:left;
     margin:4px;
+}
+
+#close:hover {
+	background:rgba(255,255,255,1);
+	cursor:hand;
+	cursor:pointer;
 }
 
 #close img {
